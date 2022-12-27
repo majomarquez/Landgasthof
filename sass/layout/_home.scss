@@ -1,4 +1,6 @@
 @use "../util" as u;
+/* layout home*/
+
 .startseite {
   background-image: url(../../asset/img/pc/home.jpg);
   @include u.background();

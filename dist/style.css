@@ -1,3 +1,14 @@
+/* map
+normalize l-12
+color var l-326
+boilerplate l-336
+typography l-343
+layout grid 440
+layout navegation l-459
+layout home l-501
+layout box-container l-512
+
+*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -5,8 +16,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-html { 
-  
+html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -312,6 +322,7 @@ template {
   display: none;
 }
 
+/* breakpoints*/ /* mixins*/ /* fonts*/ /* colors var*/
 :root {
   --text-title-1-2: #cdbea7;
   --text-title-3a: #882426;
@@ -319,15 +330,17 @@ template {
   --active-menu: #c29545;
   --box-shadow: #959da533;
   --hover-background-card: #f0f0f0;
-  --background-nav:#ffffff;
+  --background-nav: #ffffff;
 }
 
+/* boilerplate*/
 body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
 }
 
+/* typography*/
 body {
   font-size: 16px;
 }
@@ -424,6 +437,7 @@ span {
   font-style: italic;
 }
 
+/* layout grid*/
 .cards {
   display: grid;
   grid-template-columns: 1fr;
@@ -442,6 +456,7 @@ span {
   }
 }
 
+/* layout navegation*/
 nav {
   background: var(--background-nav);
   height: 120px;
@@ -483,6 +498,7 @@ nav .indicator {
   /* transform: translate(-500px); */
 }
 
+/* layout home*/
 .startseite {
   background-image: url(../../asset/img/pc/home.jpg);
   background-repeat: no-repeat;
@@ -493,6 +509,7 @@ nav .indicator {
   height: calc(100vh - 120px);
 }
 
+/* layout box-container*/
 .block-mobile {
   display: none;
 }
@@ -533,7 +550,6 @@ nav .indicator {
   place-content: center;
 }
 
-/*----CARD 1---*/
 .card1-img {
   background-image: url(../../asset/img/mobile/terrasse.png);
 }

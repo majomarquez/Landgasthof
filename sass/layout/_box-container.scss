@@ -1,4 +1,7 @@
 @use "../util" as u;
+
+/* layout box-container*/
+
 .block-mobile{
   display:none;
   @include u.breakpoint-up(medium) {
@@ -33,7 +36,6 @@
   }
 }
 
-/*----CARD 1---*/
 .card1-img {
   @include u.img-card(url(../../asset/img/mobile/terrasse.png));
   @include u.breakpoint-up(medium) {

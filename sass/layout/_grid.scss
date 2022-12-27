@@ -1,5 +1,7 @@
 @use "../util" as u;
 
+/* layout grid*/
+
 .cards {
   display: grid;
   grid-template-columns: 1fr;

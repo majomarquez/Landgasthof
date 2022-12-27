@@ -1,0 +1,8 @@
+@use "../util" as u;
+.startseite {
+  background-image: url(../../asset/img/pc/home.jpg);
+  @include u.background();
+  display: grid;
+  place-content: center;
+  height: calc(100vh - 120px);
+}

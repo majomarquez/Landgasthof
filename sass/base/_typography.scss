@@ -1,0 +1,63 @@
+@use "../util" as u;
+
+body {
+  font-size: 16px;
+  @include u.breakpoint-down(small) {
+    font-size: 16px;
+  }
+  @include u.breakpoint-up(medium) {
+    font-size: 18px;
+  }
+  @include u.breakpoint-up(large) {
+    font-size: 19px;
+  }
+  @include u.breakpoint-up(x-large) {
+    font-size: 20px;
+  }
+    @include u.breakpoint-up(x-large) {
+    font-size: 22px;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+p,
+span {
+  line-height: 1.5;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+a,
+a:visited,
+a:active {
+  color: var(--text-title-3a);
+  text-decoration: none;
+}
+li,
+li:visited,
+li:active {
+  list-style-type: none;
+}
+h1 {
+  @include u.text(var(--text-title-1-2), 700, 3em);
+}
+h2 {
+  @include u.text(var(--text-title-1-2), 500, 2em);
+}
+h3 {
+  @include u.text(var(--text-title-3a), 500, 1.0625em);
+}
+h4 {
+  @include u.text(var(--text-default), 500, 1em);
+}
+h5 {
+  @include u.text(var(--text-default), 300, 1em);
+}
+p {
+  @include u.text(var(--text-default), 300, 0.875em);
+}
+span {
+  @include u.text(var(--text-default), 500, 1em);
+  font-style: italic;
+}

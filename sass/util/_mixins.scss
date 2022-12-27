@@ -1,0 +1,20 @@
+// @use "../util" as u;
+@mixin background() {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@mixin flex() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+@mixin text($color, $fw, $size) {
+  color: $color;
+  font-weight: $fw;
+  font-size: $size;
+}
+@mixin img-card($bg) {
+  background-image: $bg;
+}

@@ -1,0 +1,76 @@
+@use "../util" as u;
+.block-mobile{
+  display:none;
+  @include u.breakpoint-up(medium) {
+  display:block;
+  }
+}
+.cards {
+  background-color: white;
+  overflow: hidden;
+  height: calc(100vh);
+  max-width: 47.99875rem;
+
+  @include u.breakpoint-up(medium) {
+    max-width: 2000px;
+    height: calc(100vh);
+  }
+
+  &__img {
+    margin-top: 120px;
+    @include u.background();
+    height: 150px;
+    @include u.breakpoint-up(large) {
+      height: 100%;
+    }
+  }
+
+  &__body {
+    padding: 30px 15px 0 15px;
+    text-align: center;
+      display: grid;
+  place-content: center;
+  }
+}
+
+/*----CARD 1---*/
+.card1-img {
+  @include u.img-card(url(../../asset/img/mobile/terrasse.png));
+  @include u.breakpoint-up(medium) {
+    height: 250px;
+  }
+  @include u.breakpoint-up(large) {
+    background-image: url(../../asset/img/pc/terrasse.jpg);
+    height: auto;
+  }
+}
+.card2-img {
+  @include u.img-card(url(../../asset/img/mobile/food.png));
+  @include u.breakpoint-up(medium) {
+    height: 250px;
+  }
+  @include u.breakpoint-up(large) {
+    background-image: url(../../asset/img/pc/food.png);
+    height: auto;
+  }
+}
+.card3-img {
+  @include u.img-card(url(../../asset/img/mobile/wine.png));
+  @include u.breakpoint-up(medium) {
+    height: 250px;
+  }
+  @include u.breakpoint-up(large) {
+    background-image: url(../../asset/img/pc/wine.jpg);
+    height: auto;
+  }
+}
+.card4-img {
+  @include u.img-card(url(../../asset/img/mobile/map.png));
+  @include u.breakpoint-up(medium) {
+    height: 250px;
+  }
+  @include u.breakpoint-up(large) {
+    background-image: url(../../asset/img/pc/map2.jpg);
+    height: auto;
+  }
+}
